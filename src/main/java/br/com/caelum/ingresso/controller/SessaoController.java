@@ -50,7 +50,7 @@ public class SessaoController {
 		
 		sessaoDao.save(sessao);
 		
-		return new ModelAndView("redirect:/admin/sala/"+form.getFilmeId()+"/sessoes");
+		return new ModelAndView("redirect:/admin/sala/"+form.getSalaId()+"/sessoes");
 	}
 
 }
