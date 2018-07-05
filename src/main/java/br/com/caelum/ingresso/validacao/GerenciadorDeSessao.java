@@ -1,7 +1,5 @@
 package br.com.caelum.ingresso.validacao;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -16,7 +14,6 @@ public class GerenciadorDeSessao {
 	}
 	
 	private boolean horarioIsConflitante(Sessao sessaoExistente, Sessao sessaoNova){
-		LocalDate hoje = LocalDate.now();
 		
 		LocalTime horarioSessaoExistente = sessaoExistente.getHorario();
 		LocalTime horarioSessaoNova = sessaoNova.getHorario();
