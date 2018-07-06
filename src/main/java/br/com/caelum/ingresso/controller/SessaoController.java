@@ -45,7 +45,7 @@ public class SessaoController {
 		Optional<ImagemCapa> imagemCapa = client.request(sessao.getFilme(),ImagemCapa.class);
 		
 		modelAndView.addObject("sessao", sessao);
-		modelAndView.addObject("imagemcapa", imagemCapa.orElse(new ImagemCapa()));
+		modelAndView.addObject("imagemCapa", imagemCapa.orElse(new ImagemCapa()));
 		return modelAndView;
 	}
 	
